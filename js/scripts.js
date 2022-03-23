@@ -5,10 +5,13 @@ if ( cuotas == 3 ) {
     alert ( 'El monto a pagar en 3 cuotas es de: ' + valor * 1.15 / 3 )
 
 } else if ( cuotas == 6 ) {
-    
+
     alert ( 'El monto a pagar en 6 cuotas es de: ' + valor * 1.20 / 6)
 } else ( cuotas == 12 ) [
    
     alert ( 'El monto a pagar en 12 cuotas es de: ' + valor * 1.35 / 12)
 ]
 
+const date = localStorage.getitem('date') || false
+
+date ? console.log('la fecha es', date) : localStorage.setItem('date', new date())
